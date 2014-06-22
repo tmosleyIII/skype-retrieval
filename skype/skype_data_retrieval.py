@@ -19,7 +19,7 @@ def printContacts(skypeDB):
     c = conn.cursor()
     c.execute("SELECT displayname, skypename, city, country, phone_mobile, birthday FROM Contacts;")
     for row in c:
-        print '\n[*] -- Found Contact --'
+        print '\n[*] --- Found Contact ---'
         print '[+] User           : ' + str(row[0])
         print '[+] Skype Username : ' + str(row[1])
         if str(row[2]) != '' and str(row[2]) != 'None':
